@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,92 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MHR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="67" translatesAutoresizingMaskIntoConstraints="NO" id="NJZ-nt-pZ9">
+                                <rect key="frame" x="0.0" y="235" width="414" height="567"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GNy-59-31s">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="144.33333333333334"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1So-Ic-chY">
+                                        <rect key="frame" x="0.0" y="211.33333333333331" width="414" height="144.33333333333331"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALe-Hv-pQ8">
+                                        <rect key="frame" x="0.0" y="422.66666666666663" width="414" height="144.33333333333337"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ALe-Hv-pQ8" firstAttribute="height" secondItem="GNy-59-31s" secondAttribute="height" id="4gj-SM-ibH"/>
+                                    <constraint firstAttribute="trailing" secondItem="ALe-Hv-pQ8" secondAttribute="trailing" id="6KU-Jy-hVT"/>
+                                    <constraint firstItem="GNy-59-31s" firstAttribute="leading" secondItem="NJZ-nt-pZ9" secondAttribute="leading" id="W6i-RZ-1Kj"/>
+                                    <constraint firstItem="1So-Ic-chY" firstAttribute="height" secondItem="GNy-59-31s" secondAttribute="height" id="X3q-kI-fkz"/>
+                                    <constraint firstItem="ALe-Hv-pQ8" firstAttribute="leading" secondItem="NJZ-nt-pZ9" secondAttribute="leading" id="beu-Xq-OUV"/>
+                                    <constraint firstItem="1So-Ic-chY" firstAttribute="leading" secondItem="NJZ-nt-pZ9" secondAttribute="leading" id="gaM-XT-v3j"/>
+                                    <constraint firstAttribute="trailing" secondItem="1So-Ic-chY" secondAttribute="trailing" id="lou-aH-byz"/>
+                                    <constraint firstAttribute="trailing" secondItem="GNy-59-31s" secondAttribute="trailing" id="n25-Jq-RGN"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="vMi-tG-T6s">
+                                <rect key="frame" x="91" y="44" width="233" height="91"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_MHR" translatesAutoresizingMaskIntoConstraints="NO" id="w3f-XT-YxA">
+                                        <rect key="frame" x="0.0" y="0.0" width="113" height="91.000000000000455"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MHR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnV-LC-hlT">
+                                        <rect key="frame" x="120" y="0.0" width="113" height="91"/>
+                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="hnV-LC-hlT" firstAttribute="width" secondItem="w3f-XT-YxA" secondAttribute="width" id="3cI-G7-nuY"/>
+                                    <constraint firstItem="hnV-LC-hlT" firstAttribute="top" secondItem="vMi-tG-T6s" secondAttribute="top" id="Pb5-XO-ItS"/>
+                                    <constraint firstAttribute="trailing" secondItem="hnV-LC-hlT" secondAttribute="trailing" id="Sdk-5G-wxy"/>
+                                    <constraint firstAttribute="bottom" secondItem="hnV-LC-hlT" secondAttribute="bottom" id="cdZ-Db-DTm"/>
+                                    <constraint firstItem="w3f-XT-YxA" firstAttribute="leading" secondItem="vMi-tG-T6s" secondAttribute="leading" id="eQf-vx-Wny"/>
+                                    <constraint firstAttribute="bottom" secondItem="w3f-XT-YxA" secondAttribute="bottom" id="hOZ-Wu-s58"/>
+                                    <constraint firstItem="w3f-XT-YxA" firstAttribute="top" secondItem="vMi-tG-T6s" secondAttribute="top" id="vlf-iN-28t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.16862745098039217" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NJZ-nt-pZ9" secondAttribute="trailing" id="4gJ-bV-kco"/>
+                            <constraint firstItem="NJZ-nt-pZ9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Bwv-fW-OJE"/>
+                            <constraint firstItem="vMi-tG-T6s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="p9y-Bv-cwd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NJZ-nt-pZ9" secondAttribute="bottom" constant="60" id="pd1-NJ-Yl7"/>
+                            <constraint firstItem="NJZ-nt-pZ9" firstAttribute="top" secondItem="vMi-tG-T6s" secondAttribute="bottom" constant="100" id="pzZ-vO-mJx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vMi-tG-T6s" secondAttribute="trailing" constant="90" id="qI6-z8-pSl"/>
+                            <constraint firstItem="vMi-tG-T6s" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vZV-3k-u7K"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vMi-tG-T6s" secondAttribute="bottom" constant="727" id="zHB-W5-zpL"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Logo_MHR" width="1200" height="1714"/>
+    </resources>
 </document>
