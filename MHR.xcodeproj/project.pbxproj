@@ -12,6 +12,9 @@
 		846A6F912327DCE5007F8773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A6F8F2327DCE5007F8773 /* Main.storyboard */; };
 		846A6F932327DCE6007F8773 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846A6F922327DCE6007F8773 /* Assets.xcassets */; };
 		846A6F962327DCE6007F8773 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846A6F942327DCE6007F8773 /* LaunchScreen.storyboard */; };
+		846A6FA1232E3BE5007F8773 /* CalendrierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A6FA0232E3BE5007F8773 /* CalendrierViewController.swift */; };
+		846A6FA3232E3D8A007F8773 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A6FA2232E3D8A007F8773 /* NewsViewController.swift */; };
+		846A6FA5232E3D9E007F8773 /* EffectifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846A6FA4232E3D9E007F8773 /* EffectifViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		846A6F922327DCE6007F8773 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846A6F952327DCE6007F8773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846A6F972327DCE6007F8773 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846A6FA0232E3BE5007F8773 /* CalendrierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendrierViewController.swift; sourceTree = "<group>"; };
+		846A6FA2232E3D8A007F8773 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		846A6FA4232E3D9E007F8773 /* EffectifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectifViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		846A6F8A2327DCE5007F8773 /* MHR */ = {
 			isa = PBXGroup;
 			children = (
+				846A6F9D232E3910007F8773 /* Modele */,
+				846A6F9E232E391F007F8773 /* Vue */,
+				846A6F9F232E3957007F8773 /* Controller */,
 				846A6F8B2327DCE5007F8773 /* AppDelegate.swift */,
 				846A6F8D2327DCE5007F8773 /* ViewController.swift */,
 				846A6F8F2327DCE5007F8773 /* Main.storyboard */,
@@ -62,6 +71,30 @@
 				846A6F972327DCE6007F8773 /* Info.plist */,
 			);
 			path = MHR;
+			sourceTree = "<group>";
+		};
+		846A6F9D232E3910007F8773 /* Modele */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modele;
+			sourceTree = "<group>";
+		};
+		846A6F9E232E391F007F8773 /* Vue */ = {
+			isa = PBXGroup;
+			children = (
+				846A6FA0232E3BE5007F8773 /* CalendrierViewController.swift */,
+				846A6FA2232E3D8A007F8773 /* NewsViewController.swift */,
+				846A6FA4232E3D9E007F8773 /* EffectifViewController.swift */,
+			);
+			path = Vue;
+			sourceTree = "<group>";
+		};
+		846A6F9F232E3957007F8773 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846A6FA1232E3BE5007F8773 /* CalendrierViewController.swift in Sources */,
 				846A6F8E2327DCE5007F8773 /* ViewController.swift in Sources */,
 				846A6F8C2327DCE5007F8773 /* AppDelegate.swift in Sources */,
+				846A6FA5232E3D9E007F8773 /* EffectifViewController.swift in Sources */,
+				846A6FA3232E3D8A007F8773 /* NewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

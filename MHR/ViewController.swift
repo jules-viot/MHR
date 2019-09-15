@@ -18,7 +18,18 @@ class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-
+    
+    
+    @IBAction func calendrierButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "showCalendrier", sender: nil)
+    }
+    @IBAction func newsButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "showNews", sender: nil)
+    }
+    @IBAction func effectifButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "showEffectif", sender: nil)
+    }
+    
 
 }
 
